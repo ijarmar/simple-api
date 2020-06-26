@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+    frontend:
+        build: ./frontend
+        environment:
+            - APIURL=http://backend:8000/
+        image: example-frontend
+        container_name: frontend
+        ports:
+            - 9000:9000
+        depends_on:
+            - api
+    api:
+        build: ./api
+        environment:
+            - SECRET=asdf123
+            - OMDBAPIKEY=6b98a3b7
+        image: example-backend
+        container_name: backend
+        ports:
+            - 8000:8000
