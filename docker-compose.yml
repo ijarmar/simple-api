@@ -5,7 +5,7 @@ services:
         build: ./frontend
         environment:
             - APIURL=http://backend:8000/
-        image: example-frontend
+        image: simple-frontend
         container_name: frontend
         ports:
             - 9000:9000
@@ -16,7 +16,7 @@ services:
         environment:
             - SECRET=asdf123
             - OMDBAPIKEY=6b98a3b7
-        image: example-backend
+        image: simple-backend
         container_name: backend
         ports:
             - 8000:8000
