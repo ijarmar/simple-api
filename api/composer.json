@@ -1,0 +1,24 @@
+{
+    "name": "ijarmar/simple-api",
+    "description": "Take-Home Assignment - Simple Api",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Api\\": "",
+            "Api\\Utils\\": "utils",
+            "Api\\Config\\": "config",
+            "Api\\Providers\\": "providers",
+            "Api\\Controllers\\": "controllers/"
+        }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Ishanov",
+            "email": "yaroslavishanov@gmail.com"
+        }
+    ]
+}
