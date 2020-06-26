@@ -1,5 +1,11 @@
 # Take-Home Assignment - Simple Api
 
+##### Project consists of 2 parts: frontend and api
+
+### Requirements
+ - php 7.X
+ - composer (tested with 1.10.7)
+
 ### Setup
 
 #### Api
@@ -16,17 +22,11 @@ $ env SECRET=<insert secret> \
 
 ```sh
 $ cd frontend/
-$ env APIURL=<insert api url> php -S 0.0.0.0:9000
+$ env APIURL=<insert api url> php -S 0.0.0.0:9000 # <insert api url> is something like http://0.0.0.0:8000/
 ```
 
 #### Docker
 
 ```sh
-$ docker build \
-> --build-arg SECRET=<insert secret> \
-> --build-arg OMDBAPIKEY=<insert api key> -t api .
-```
-
-```sh
-$ docker run -d -p 8000:8000 api
+$ docker-compose up
 ```
