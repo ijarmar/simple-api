@@ -27,6 +27,7 @@ class Book implements Authenticatable {
         }
 
         $params = URL::getQueryParams($_SERVER['REQUEST_URI']);
+        $params['jscmd'] = 'details';
         $params['format']  = 'json';
 
         $response = Curl::get('http://openlibrary.org/api/books', $params);
