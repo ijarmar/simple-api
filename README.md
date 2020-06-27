@@ -6,7 +6,7 @@
  - php 7.X
  - composer (tested with 1.10.7)
 
-## Setup
+## Setup (Local)
 
 #### Api
 
@@ -24,8 +24,9 @@ $ env SECRET=<insert secret> \
 $ cd frontend/
 $ env APIURL=<insert api url> php -S 0.0.0.0:9000 # <insert api url> is something like http://0.0.0.0:8000/
 ```
+## Setup (Docker)
 
-#### docker-compose
+#### Docker-compose
 
 ```sh
 $ docker-compose up
